@@ -3,7 +3,6 @@ import { app } from './app';
 
 const start = async () => {
   try {
-    console.log('starting up...');
     if (!process.env.JWT_KEY) {
       // this is the JWT created in k8s using the
       //"kubectl create secret generic jwt-secret --from-literal=JWT_KEY=[value]"
